@@ -1,7 +1,8 @@
 import { readData } from "../utils.js"
 
+const input = readData("./day-01/input.txt")
+
 const partOne = () => {
-  const input = readData("./day-01/input.txt")
   const { left, right } = input.reduce(
     (acc, curr) => {
       const [left, right] = curr.split(/ +/g)
@@ -24,7 +25,6 @@ const partOne = () => {
 }
 
 const partTwo = () => {
-  const input = readData("./day-01/input.txt")
   const { left, right } = input.reduce(
     (acc, curr) => {
       const [left, right] = curr.split(/ +/g)
